@@ -1,0 +1,29 @@
+
+if __name__ == '__main__':
+    s = input()
+
+
+    status1= False
+    status2= False
+    status3= False
+    status4= False
+    status5= False
+    
+
+    for i in range(0,len(s)):
+        if(status1!=True):
+            status1=s[i].isalnum()
+        if(status2!=True):
+            status2=s[i].isalpha()
+        if(status3!=True):
+            status3=s[i].isdigit()
+        if(status4!=True):
+            status4=s[i].islower()
+        if(status5!=True):
+            status5=s[i].isupper()
+    print(status1)
+    print(status2)
+    print(status3)
+    print(status4)
+    print(status5)
+           
